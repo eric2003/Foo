@@ -3,6 +3,7 @@ cmake_minimum_required ( VERSION 3.28 )
 project ( Foo )
 
 add_library( Foo STATIC )
+add_library( Foo::Foo ALIAS Foo )
 
 target_sources( Foo 
     PRIVATE 
